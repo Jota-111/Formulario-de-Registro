@@ -1,0 +1,134 @@
+
+:root {
+  --bg-body: #f4f7f6;
+  --bg-card: #ffffff;
+  --text-color: #333333;
+  --border-color: #cccccc;
+  --btn-bg: #333333;
+  --btn-text: #ffffff;
+}
+
+
+body.modo-oscuro {
+  --bg-body: #1e1e1e;
+  --bg-card: #2d2d2d;
+  --text-color: #ffffff;
+  --border-color: #555555;
+  --btn-bg: #f4f7f6;
+  --btn-text: #333333;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-color);
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 0 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--bg-card);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.header-tarjeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.btn-modo {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.campo-grupo {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: transparent;
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+
+input.error {
+  border-color: #e53935 !important;
+}
+
+input.exito {
+  border-color: #4CAF50 !important;
+}
+
+.mensaje-error {
+  color: #e53935;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 15px;
+}
+
+.contador-caracteres {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+  margin-top: 4px;
+}
+
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background-color: #45a049;
+}
+
+#mensajeFinal {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+}
